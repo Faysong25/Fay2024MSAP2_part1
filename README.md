@@ -1,6 +1,4 @@
-# Fay2024MSAP2_part1
-
-# EDA and Preprocessing for [Dataset Name]
+# EDA and Preprocessing for X-store Sales
 
 ## Description
 This repository contains the exploratory data analysis (EDA) and preprocessing steps for the [Dataset Name]. The analysis includes data cleaning, visualization, and feature engineering.
@@ -15,5 +13,4 @@ This repository contains the exploratory data analysis (EDA) and preprocessing s
 2. Review the `summary.txt` for a concise overview of the work done.
 3. Check the `screenshots/` folder for Power BI visualizations.
 
-## Contact
-For any questions, please contact [Your Name] at [your email].
+
