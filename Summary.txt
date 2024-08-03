@@ -1,0 +1,37 @@
+Exploratory Data Analysis (EDA)
+
+To understand the data distribution and relationships between variables, i employed several visualization techniques:
+
+- Histograms: Created histograms for Sales, Quantity, Discount, and Profit to understand their distribution.
+   - Sales shows a right-skewed distribution with most values concentrated at the lower end.
+   - Quantity distribution indicates a few prominent peaks, suggesting some common order quantities.
+   - Discount has distinct peaks, with the majority of transactions having a 0% discount.
+   
+   - Profit is centered around zero, with a few extreme values on both ends, indicating a mix of highly profitable and highly unprofitable transactions.
+- Time Series Analysis: Plotted Sales and Profit over time to identify trends, seasonality, and anomalies.
+   - The sales trend is highly volatile, with several peaks indicating high sales periods.
+   - Profit follows a similar but more subdued pattern compared to sales, suggesting other factors influence profit margins.
+Correlation Analysis:
+
+- Correlation Matrix and Heatmap: Generated a correlation matrix to understand the relationships between variables.
+   - Sales and Profit show a positive correlation (0.17), indicating that higher sales tend to correspond with higher profits.
+   - Discount and Profit have a negative correlation (-0.54), suggesting that higher discounts might reduce profit margins.
+   - Quantity shows some correlation with both Sales (0.21) and Discount (0.12), but the relationships are weaker compared to Discount and Profit.ween Sales and Profit, a negative correlation between Discount and Profit, and weaker relationships between other variables.
+
+Data Preprocessing
+
+To prepare the data for modeling, we performed the following preprocessing steps:
+
+- Handled missing values through appropriate imputation techniques.
+- Addressed outliers in Profit and Sales using capping to mitigate their impact.
+- Encoded categorical variables using one-hot encoding to convert them into numerical format.
+- Normalized continuous variables using min-max scaling to bring them to a common scale.
+
+Interesting Findings
+
+- The stark right-skew in the Sales distribution indicates that while most transactions are of low value, a few high-value transactions significantly influence the overall sales figures.
+- The correlation analysis highlighted the detrimental impact of discounts on profit margins, which is crucial for strategic pricing decisions.
+- Time series analysis revealed high volatility in sales and profits, pointing to potential external factors influencing these metrics.
+
+These insights will guide feature engineering and model selection in subsequent steps.
+
