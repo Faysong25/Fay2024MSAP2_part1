@@ -1,0 +1,40 @@
+Summary of Regression Model Training and Evaluation
+This project aims to build and evaluate various regression models to predict sales profit based on a provided dataset. The steps undertaken in this analysis are outlined below:
+
+1. Data Loading and Preprocessing
+ - Data Loading: The preprocessed dataset, including features and the target variable (profit), was loaded.
+ - Feature Engineering: New features were created to capture non-linear relationships, including interaction and polynomial terms.
+ - Data Standardization: Features were standardized to improve model training and performance.
+
+2. Data Splitting
+ - Training and Test Split: The dataset was split into a training set (80%) and a test set (20%) to evaluate model performance on unseen data.
+
+3. Model Selection and Training
+ - Algorithms Chosen: Linear Regression, Random Forest Regressor, Gradient Boosting Regressor, and XGBoost Regressor.
+ - Training: Models were trained on the training set to learn the underlying patterns in the data.
+
+4. Hyperparameter Tuning
+ - XGBoost: Used RandomizedSearchCV for hyperparameter tuning to optimize model performance.
+ - Best Parameters: Selected the best hyperparameters based on cross-validation results.
+
+5. Stacking Regressor
+ - Model Stacking: Combined multiple models using a Stacking Regressor to leverage their individual strengths.
+
+6. Evaluation Metrics
+ - Metrics Used: Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² were computed to evaluate model performance.
+
+7. Results
+ - Linear Regression: MSE: 3370.98, MAE: 31.46, R²: 0.8116
+ - Random Forest Regressor: MSE: 4205.27, MAE: 25.83, R²: 0.7649
+ - Gradient Boosting Regressor: MSE: 2514.96, MAE: 26.54, R²: 0.8594
+ - Best XGBoost Regressor: MSE: 2502.63, MAE: 26.77, R²: 0.8601
+ - Stacking Regressor: MSE: 3129.93, MAE: 25.97, R²: 0.8250
+
+8. Insights and Improvements
+ - Gradient Boosting and XGBoost: These models outperformed others, capturing complex patterns better.
+ - Hyperparameter Tuning: Significantly improved the performance of the XGBoost model.
+ - Model Stacking: Provided good performance but did not exceed the best individual model.
+ - Visualizations: Highlighted areas for improvement, showing discrepancies between actual and predicted values.
+
+Conclusion
+The XGBoost Regressor, with optimized hyperparameters, provided the best predictive performance. Future improvements could include further feature engineering and additional model tuning. The stacking approach shows potential but requires more refinement.
